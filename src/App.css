@@ -5,11 +5,7 @@
   grid-gap: 10px;
   justify-content: center;
 
-  
-}
-
-.container {
-  border: 1px solid;
+  padding: 5vh !important;
 }
 
 .mainContainer {

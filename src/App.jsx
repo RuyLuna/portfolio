@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Container from './components/Container'
 import './App.css'
 
 function App() {
@@ -8,31 +9,42 @@ function App() {
 
   return (
     <>
+    <body>
       <div className="containers">
-        <div className="container mainContainer">
-          <h1>Welcome</h1>
-        </div>
+        <Container title="Welcome" gridContainer="mainContainer smallTitle">
+          Hola! Soy Ruy Luna un programador web full stack, especializado en Angular
+          con experiencia trabajando en el desarrollo y mantenimiento de sistemas empresariales.
+          Pero listo para enfrentar nuevos retos, por ejemplo realice este portafolio con ReactJS.
+          <br/>
+          Sientete libre de contactarme para un nuevo projecto, una oferta o solo para saludar!
+        </Container>
+        <Container title="Projects" gridContainer="projects">
 
-        <div className="container projects">
-          <h1>Projects </h1>
-        </div>
-
-        <div className="container links">
-          <h1>Contact me</h1>
-        </div>
-
-        <div className="container fun">
-          <h1>Fun</h1>
-        </div>
-
-        <div className="container skills">
-          <h1>Skills</h1>
-        </div>
-
-        <div className="container footer">
-          <h1>Copyright</h1>
-        </div>
+        </Container>
+        <Container title="Contact me" gridContainer="links">
+        
+        </Container>
+        <Container title="Fun" gridContainer="fun">
+        
+        </Container>
+        <Container title="Skills" gridContainer="skills">
+          <ul className="cycling-list">
+            <li>React</li>
+            <li>Angular</li>
+            <li>Typescript</li>
+            <li>Git</li>
+            <li>NodeJS</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Jira</li>
+          </ul>
+        </Container>
+        <Container title="" gridContainer="footer smallText">
+          © 2025 - Ruy Luna
+        </Container>
       </div>
+    </body>
+      
     </>
   )
 }

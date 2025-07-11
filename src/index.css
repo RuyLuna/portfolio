@@ -6,7 +6,7 @@
   color-scheme: normal;
   color: black;
   background: #ECE2D0;
-  background: linear-gradient(180deg, rgba(236, 226, 208, 1) 50%, rgba(169, 80, 204, 1) 100%);
+  background: linear-gradient(180deg, rgba(236, 226, 208, 1) 60%, rgba(169, 80, 204, 1) 100%);
 
   overflow: visible;
 
@@ -18,8 +18,9 @@
 
 body {
   min-height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-
 
 
 
