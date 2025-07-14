@@ -37,3 +37,11 @@
   grid-row: 6 / 7;
   grid-column: 5;
 }
+
+.IconContainerList {
+  padding: 1rem;
+}
+
+.IconContainerList .IconContainer {
+  margin-bottom: .5rem;
+}

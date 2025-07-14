@@ -1,4 +1,4 @@
-import '../components/Container.css'
+import './Container.css'
 
 export default function Container({ children, title, gridContainer }){
     const classes = 'container ' + gridContainer
@@ -8,9 +8,7 @@ export default function Container({ children, title, gridContainer }){
             <h1>
                 {title}
             </h1>
-            <p>
-                {children}
-            </p>
+            {children}
         </div>
     )
 }

@@ -1,0 +1,7 @@
+.IconContainer {
+    border-color: solid rgba(169, 80, 204, 1);
+    border-bottom: 1rem;
+    border-right: 1rem;
+
+    place-content: center;
+}
