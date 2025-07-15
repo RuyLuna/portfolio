@@ -1,7 +1,9 @@
 .IconContainer {
-    border-color: solid rgba(169, 80, 204, 1);
-    border-bottom: 1rem;
-    border-right: 1rem;
-
-    place-content: center;
+    border-radius: 3%;
+    border-top: solid rgba(169, 80, 204, 1) .18rem;
+    border-left: solid rgba(169, 80, 204, 1) .18rem;
+    border-bottom: solid rgba(169, 80, 204, 1) .35rem;
+    border-right: solid rgba(169, 80, 204, 1) .35rem;
+    
+    align-content: center;
 }

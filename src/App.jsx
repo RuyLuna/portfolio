@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Container from './components/Container/Container'
 import IconContainer from './components/IconContainer/IconContainer'
+import DynamicList from './components/DynamicList/DynamicList'
 import './App.css'
 
 // font awesome icons
@@ -14,6 +15,21 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const projects = [
+    {
+      header: 'Ordenes de compra',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ratione officiis cumque doloremque distinctio, illum quam.'
+    },
+    {
+      header: 'Cuentas por cobrar',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ratione officiis cumque doloremque distinctio, illum quam.'
+    },
+    {
+      header: 'Cuentas por pagar',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ratione officiis cumque doloremque distinctio, illum quam.'
+    }
+  ]
 
   return (
     <>
@@ -42,17 +58,16 @@ function App() {
               }}/>
             </p>
           </div>
-          
         </Container>
         <Container title="Projects" gridContainer="projects">
-
+              <DynamicList list={projects}/>
         </Container>
         <Container title="Contact me" gridContainer="links">
               <div className='IconContainerList'>
-                <IconContainer icon={faGithub} faClasses='fa-2x'/>
-                <IconContainer icon={faLinkedin} faClasses='fa-2x'/>
-                <IconContainer icon={faEnvelope} faClasses='fa-2x'/>
-                <IconContainer icon={faFile} faClasses='fa-2x'/>
+                <IconContainer icon={faGithub} text="Mi Github" faClasses='fa-2x'/>
+                <IconContainer icon={faLinkedin} text="Mi Linkedin" faClasses='fa-2x'/>
+                <IconContainer icon={faFile} text="Mi CV" faClasses='fa-2x'/>
+                <IconContainer icon={faEnvelope} text="ruyjluna@gmail.com" faClasses='fa-2x'/>
               </div>
         </Container>
         <Container title="Fun" gridContainer="fun">
