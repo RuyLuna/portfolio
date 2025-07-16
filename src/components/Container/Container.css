@@ -43,8 +43,10 @@
     overflow: hidden;
 }
 
-.cycling-list ul {
-    list-style-type: circle !important;
+.skills ul {
+    list-style: circle inside;
+    
+    padding-left: .3rem;
 }
 
 .cycling-list li {
