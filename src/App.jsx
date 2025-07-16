@@ -35,7 +35,7 @@ function App() {
     <>
     <body>
       <div className="containers">
-        <Container title="Welcome" gridContainer="mainContainer smallTitle">
+        <Container title="Saludos!" gridContainer="mainContainer smallTitle">
           <div style={{
             display: 'flex'
           }}>
@@ -59,10 +59,10 @@ function App() {
             </p>
           </div>
         </Container>
-        <Container title="Projects" gridContainer="projects">
+        <Container title="Projectos en los que he trabajado" gridContainer="projects">
               <DynamicList list={projects}/>
         </Container>
-        <Container title="Contact me" gridContainer="links">
+        <Container title="Contactame" gridContainer="links">
               <div className='IconContainerList'>
                 <IconContainer icon={faGithub} text="Mi Github" faClasses='fa-2x'/>
                 <IconContainer icon={faLinkedin} text="Mi Linkedin" faClasses='fa-2x'/>
@@ -70,10 +70,10 @@ function App() {
                 <IconContainer icon={faEnvelope} text="ruyjluna@gmail.com" faClasses='fa-2x'/>
               </div>
         </Container>
-        <Container title="Fun" gridContainer="fun">
+        <Container title="Lenguaje" gridContainer="fun">
         
         </Container>
-        <Container title="Skills" gridContainer="skills">
+        <Container title="Habilidades principales" gridContainer="skills">
           <ul className="cycling-list">
             <li>React</li>
             <li>Angular</li>
