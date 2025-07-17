@@ -1,9 +1,11 @@
 {
   "name": "package",
-  "base": "/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "index.html",
+  "homepage": "./",
+  "base": "/dist/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
