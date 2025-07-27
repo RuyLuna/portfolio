@@ -1,4 +1,7 @@
 .IconContainer {
+    color: inherit;
+    text-decoration: none;
+
     border-radius: 3%;
     border-top: solid rgba(169, 80, 204, 1) .18rem;
     border-left: solid rgba(169, 80, 204, 1) .18rem;
@@ -6,4 +9,10 @@
     border-right: solid rgba(169, 80, 204, 1) .35rem;
     
     align-content: center;
+}
+
+.IconContainer.hover:hover {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgb(115, 50, 141);
 }
