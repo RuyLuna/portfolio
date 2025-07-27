@@ -10,7 +10,7 @@ export default function CVNavbar({ onDownloadClick }) {
                 </Link>
 
                 <a
-                    href="../../../public/RuyLunaCV_ES.pdf"
+                    href="/RuyLunaCV_ES.pdf"
                     download="RuyLuna_CV.pdf"
                     className="cv-navbar-button"
                     onClick={onDownloadClick}
