@@ -46,7 +46,7 @@
 .skills ul {
     list-style: circle inside;
     
-    padding-left: .3rem;
+    padding-inline: 1rem;
 }
 
 .cycling-list li {
