@@ -1,0 +1,20 @@
+{
+   "mainMessage1": "Hola! Soy Ruy Luna un programador web full stack, especializado en Angular con experiencia trabajando en el desarrollo y mantenimiento de sistemas empresariales.",  
+   "mainMessage2": "Sin embargo listo para enfrentar nuevos retos, por ejemplo realice este portafolio con ReactJS y aprendí algunas cosas en el camino.", 
+   "mainMessage3": "Sientete libre de contactarme para un nuevo projecto, una oferta o solo para saludar!",
+   "projects": {
+    "purchaseOrders": {
+      "header": "Órdenes de Compra",
+      "text": "Sistema donde las sucursales realizan órdenes de compra, un organismo central u otra sucursal administra el camino de la orden y el surtido de productos desde que se pide hasta que se surte. Desarrollado en Angular 14+ con NodeJS y MySQL."
+    },
+    "accountsReceivablePayable": {
+      "header": "Cuentas por Cobrar y por Pagar",
+      "text": "Dúo de sistemas para llevar la cartera de los clientes, generar los movimientos, sus parcialidades y manejar los pagos realizados. Todo configurable. Desarrollado con un enfoque en la velocidad y rápida generación de reportes."
+    }
+  },
+  "projectsHeader": "Algunos de los projectos en los que he trabajado",
+  "skillsHeader": "Habilidades principales",
+  "contactHeader": "Contactame!",
+  "CVNavBar_Backbutton": "Regresar al portafolio",
+   "CVNavBar_Downloadbutton": "Descargar CV"
+}

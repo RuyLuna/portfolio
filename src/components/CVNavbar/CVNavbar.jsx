@@ -1,12 +1,16 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './CVNavbar.css';
 
 export default function CVNavbar({ onDownloadClick }) {
+
+    const { t, i18n } = useTranslation();
+    
     return (
         <nav className="cv-navbar-container">
             <div className="cv-navbar-buttons">
                 <Link to="/" className="cv-navbar-button">
-                    Back to Portfolio
+                    {t('CVNavBar_Backbutton')}
                 </Link>
 
                 <a
@@ -15,7 +19,7 @@ export default function CVNavbar({ onDownloadClick }) {
                     className="cv-navbar-button"
                     onClick={onDownloadClick}
                 >
-                    Download PDF
+                    {t('CVNavBar_Downloadbutton')}
                 </a>
             </div>
         </nav>

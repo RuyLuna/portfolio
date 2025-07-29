@@ -2,25 +2,32 @@ import Container from '../../components/Container/Container'
 import IconContainer from '../../components/IconContainer/IconContainer'
 import DynamicList from '../../components/DynamicList/DynamicList'
 import ToggleButton from '../../components/ToggleButton/ToggleButton'
+import { useTranslation } from 'react-i18next';
 
 // font awesome icons
-
 import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
 import { faMoon, faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function HomePage(){
+    const { t, i18n } = useTranslation();
+
+    const toggleLanguage = () => {
+      const currentLang = i18n.language;
+
+      const nextLang = currentLang === 'en' ? 'es' : 'en';
+
+      i18n.changeLanguage(nextLang);
+  };
+
     const projects = [
         {
-        header: 'Ordenes de compra',
-        text: `Sistema donde sucursales realizan ordenes de compra, un organismo central u otra sucursal,
-                administra el camino de la orden y el surtido de productos desde que se pide hasta que se surte.
-                Desarrollado en Angular 14+ Con NodeJS y MySQL.`
+          header: t('projects.purchaseOrders.header'),
+          text: t('projects.purchaseOrders.text')
         },
         {
-        header: 'Cuentas por cobrar y por pagar',
-        text: `Duo de sistemas para llevar la cartera de los clientes, generar los movimientos, sus parcialidades y manejar los pagos realizados. Todo configurable.
-                Desarrollado con un enfoque en la velocidad y rapida generación de reportes.`
+          header: t('projects.accountsReceivablePayable.header'),
+          text: t('projects.accountsReceivablePayable.text')
         }
     ]
 
@@ -32,12 +39,11 @@ export default function HomePage(){
                 <p style={{
                   width: '70%'
                 }}>
-                  Hola! Soy Ruy Luna un programador web full stack, especializado en Angular
-                  con experiencia trabajando en el desarrollo y mantenimiento de sistemas empresariales.
+                  {t('mainMessage1')}
                   <br/>
-                  Sin embargo listo para enfrentar nuevos retos, por ejemplo realice este portafolio con ReactJS.
+                  {t('mainMessage2')}
                   <br/>
-                  Sientete libre de contactarme para un nuevo projecto, una oferta o solo para saludar!
+                  {t('mainMessage3')}
                 </p>
                 <p style={{
                   width: '10%'
@@ -49,21 +55,26 @@ export default function HomePage(){
                 </p>
               </div>
             </Container>
-            <Container title="Algunos de los projectos en los que he trabajado" gridContainer="projects">
+            <Container title={t('projectsHeader')} gridContainer="projects">
                   <DynamicList list={projects}/>
             </Container>
-            <Container title="Contactame" gridContainer="links">
+            <Container title={t('contactHeader')} gridContainer="links">
                   <div className='IconContainerList'>
                     <IconContainer icon={faGithub} link='https://github.com/RuyLuna' text="Mi Github" faClasses='fa-2x'/>
                     <IconContainer icon={faLinkedin} link='https://linkedin.com/in/ruy-jesé-luna-sandoval-b88209279' text="Mi Linkedin" faClasses='fa-2x'/>
-                    <IconContainer icon={faFile} route={true} link='/cv' text="Mi CV" faClasses='fa-2x'/>
+                    <IconContainer icon={faFile} route={true} link={i18n.language == 'en' ? '/cvEN' : '/cvES'} text="Mi CV" faClasses='fa-2x'/>
                     <IconContainer icon={faEnvelope} hover={false} text="ruyjluna@gmail.com" faClasses='fa-2x'/>
                   </div>
             </Container>
-            <Container title="Lenguaje" gridContainer="fun">
-                  {/* <ToggleButton/> */}
+            <Container title="Lenguaje // Languages" gridContainer="fun">
+                  <div className="ToggleButtonContainer">
+                    <button className="ToggleButton" onClick={toggleLanguage}>
+                      {i18n.language === 'en' ? 'Switch to Spanish' : 'Cambiar a Inglés'}
+                    </button>
+                  </div>
+                  
             </Container>
-            <Container title="Habilidades principales" gridContainer="skills">
+            <Container title={t('skillsHeader')} gridContainer="skills">
               <ul className="cycling-list">
                 <li>Angular</li>
                 <li>React</li>

@@ -45,3 +45,32 @@
 .IconContainerList .IconContainer {
   margin-bottom: .5rem;
 }
+
+.ToggleButton {
+    color: inherit;
+    background-color: transparent; /* Initial transparent background */
+    text-decoration: none;
+    font-size: large;
+
+    border-radius: 3%;
+    border-top: solid rgba(169, 80, 204, 1) .18rem;
+    border-left: solid rgba(169, 80, 204, 1) .18rem;
+    border-bottom: solid rgba(169, 80, 204, 1) .35rem;
+    border-right: solid rgba(169, 80, 204, 1) .35rem;
+
+    align-content: center;
+
+    /* Add transition for a smooth change */
+    transition: background-color 0.3s ease; /* Adjust duration and timing function as needed */
+}
+
+.ToggleButton:hover {
+    background-color: rgba(100, 50, 150, 0.5); /* A darker, slightly opaque purple */
+    /* You can adjust the RGBA values to get the exact shade you want.
+       The last value (0.5 in this case) controls the opacity. */
+}
+
+.ToggleButtonContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

@@ -1,0 +1,20 @@
+{
+    "mainMessage1": "Hello! I'm Ruy Luna, a full stack developer, specialized in Angular with experience working on developing and maintaining enterprise level systems.",  
+    "mainMessage2": "Nonetheless ready to face new challenges, for example I made this portfolio using ReactJS and learn some things along the way", 
+    "mainMessage3": "Feel free to contact me to talk about a project, an offer or just to chat!",
+    "projects": {
+        "purchaseOrders": {
+            "header": "Purchase Orders",
+            "text": "System where branches place purchase orders, a central organization or another branch manages the order's journey and product supply from order to fulfillment. Developed in Angular 14+ with NodeJS and MySQL."
+        },
+        "accountsReceivablePayable": {
+            "header": "Accounts Receivable and Payable",
+            "text": "Pair of systems to manage customer portfolios, generate movements, their partial payments, and handle payments made. All configurable. Developed with a focus on speed and quick report generation."
+        }
+    },
+    "projectsHeader": "Some of the projects I've worked on",
+    "skillsHeader": "Hard skills",
+    "contactHeader": "Contact me!",
+    "CVNavBar_Backbutton": "Back to the portfolio",
+    "CVNavBar_Downloadbutton": "Download CV"
+}
