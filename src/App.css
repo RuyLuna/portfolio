@@ -46,10 +46,23 @@
   margin-bottom: .5rem;
 }
 
+.ToggleButtonContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
 .ToggleButton {
     width: 80%;
     color: inherit;
-    background-color: transparent; /* Initial transparent background */
+
+    margin-right: 10%;
+    background-color: transparent;
     text-decoration: none;
     font-size: large;
 
@@ -61,18 +74,9 @@
 
     align-content: center;
 
-    /* Add transition for a smooth change */
-    transition: background-color 0.3s ease; /* Adjust duration and timing function as needed */
+    transition: background-color 0.3s ease;
 }
 
 .ToggleButton:hover {
-    background-color: rgba(100, 50, 150, 0.5); /* A darker, slightly opaque purple */
-    /* You can adjust the RGBA values to get the exact shade you want.
-       The last value (0.5 in this case) controls the opacity. */
-}
-
-.ToggleButtonContainer {
-justify-content: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    background-color: rgba(100, 50, 150, 0.5);
 }
