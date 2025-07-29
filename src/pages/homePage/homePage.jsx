@@ -1,7 +1,6 @@
 import Container from '../../components/Container/Container'
 import IconContainer from '../../components/IconContainer/IconContainer'
 import DynamicList from '../../components/DynamicList/DynamicList'
-import ToggleButton from '../../components/ToggleButton/ToggleButton'
 import { useTranslation } from 'react-i18next';
 
 // font awesome icons

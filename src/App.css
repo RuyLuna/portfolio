@@ -47,6 +47,7 @@
 }
 
 .ToggleButton {
+    width: 80%;
     color: inherit;
     background-color: transparent; /* Initial transparent background */
     text-decoration: none;
@@ -71,6 +72,7 @@
 }
 
 .ToggleButtonContainer {
+justify-content: center;
     padding-left: 1rem;
     padding-right: 1rem;
 }
