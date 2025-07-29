@@ -80,3 +80,52 @@
 .ToggleButton:hover {
     background-color: rgba(100, 50, 150, 0.5);
 }
+
+/* Responsive */
+
+@media only screen and (max-width: 480px) {
+  .containers {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 2vh !important;
+  }
+
+  .mainContainer,
+  .links,
+  .projects,
+  .skills,
+  .fun,
+  .footer {
+    grid-row: auto !important;
+    grid-column: 1 / -1 !important;
+  }
+
+  .mainContainer {
+    order: 2;
+
+    padding-right: 2rem;
+  }
+
+  .links {
+    order: 3;
+  }
+
+  .projects {
+    order: 4;
+  }
+
+  .skills {
+    order: 5;
+  }
+
+  .fun {
+    order: 1;
+
+    padding-bottom: 1rem;
+  }
+
+  .footer {
+    order: 6;
+  }
+}

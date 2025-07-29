@@ -4,6 +4,26 @@
     padding-left: 1rem;
 }
 
+@media only screen and (max-width: 480px) {
+    .DynamicList {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: 1rem;
+    }
+
+    .DynamicList-Item {
+        border-top: solid rgba(169, 80, 204, 1);
+        border-bottom: solid rgba(169, 80, 204, 1);
+        border-radius: 1%;
+        
+        margin-bottom: 5%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+}
+
 .DynamicList-Item {
     border-top: solid rgba(169, 80, 204, 1);
     border-bottom: solid rgba(169, 80, 204, 1);
