@@ -83,7 +83,7 @@
 
 /* Responsive */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 900px) {
   .containers {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
